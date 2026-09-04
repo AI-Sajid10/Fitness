@@ -1,0 +1,28 @@
+*{
+    font-family: "Inter", sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    margin: 0 10px;
+}
+.navbar h3{
+    color: #E6533C;
+    font-size: 36px;
+    font-weight: 800;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navhero{
+    background: linear-gradient(#111111 0%, #777777 100%);
+}
