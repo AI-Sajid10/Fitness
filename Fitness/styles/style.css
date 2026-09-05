@@ -11,27 +11,45 @@ body {
 }
 
 /* Navbar Styles */
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
     max-width: 1200px;
     margin: 0 auto;
-    align-items: center;
+    padding: 20px 10px;
 }
-.navlist{
-    display: flex;
-    gap: 47px;
-    border: 1px solid rgb(72, 71, 71);
-    border-radius: 39px;
-    padding: 2px 5px;
-}
-.navbar h3{
+
+.navbar h3 {
     color: #E6533C;
     font-size: 36px;
     font-weight: 800;
     font-style: italic;
+}
+
+.navlist {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    border: 1px solid #333;
+    border-radius: 40px;
+    padding: 2px 5px;
+}
+
+.navlist p {
+    font-size: 14px;
+    color: white;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+.navlist .active {
+    background-color: #E6533C;
+    border-radius: 30px;
+}
+
+.navbar span {
+    display: none;
 }
 
 /* banner styles */
@@ -42,6 +60,7 @@ body {
     padding: 10px;
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 .banner-left{
     min-height: 200px;
@@ -98,4 +117,60 @@ body {
   height: 50px;
   background-color: #e6533c;
   border-radius: 50%;
+}
+
+
+/* main design*/
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-1 {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.main-1 h1 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.main-1 p {
+    font-size: 14px;
+    color: gray;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.main-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.habit-card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333;
+}
+
+.habit-card h4 {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+.habit-card p {
+    color: gray;
+    font-size: 12px;
+    line-height: 1.4;
+    max-width: 160px;
+    margin: 0 auto;
 }
