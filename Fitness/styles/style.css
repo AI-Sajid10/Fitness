@@ -1,28 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 *{
     font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+body {
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+}
+
+/* Navbar Styles */
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
 }
-.navbar ul{
+.navlist{
     display: flex;
-    list-style: none;
-}
-.navbar ul li{
-    margin: 0 10px;
+    gap: 47px;
+    border: 1px solid rgb(72, 71, 71);
+    border-radius: 39px;
+    padding: 2px 5px;
 }
 .navbar h3{
     color: #E6533C;
     font-size: 36px;
     font-weight: 800;
+    font-style: italic;
 }
-.hero{
+
+/* banner styles */
+.hero-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.navhero{
-    background: linear-gradient(#111111 0%, #777777 100%);
+.banner-left{
+    min-height: 200px;
+    width: 50%;
+}
+.banner-left h1{
+    font-size: 78px;
+}
+.banner-left p{
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+.banner-left button{
+    width: 200px;
+    height: 50px;
+    border-radius: 42px;
+    color: white;
+}
+.banner-right{
+    min-height: 200px;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+.banner-right img{
+    width: 55%;
+}
+.tooltip{
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.302);
+    right: -10%;
+    width: 193px;
+    height: 98px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 12px;
+    top: 17%;
+}
+.tooltip2 {
+  background-color: rgba(70, 68, 68, 0.302);
+  position: absolute;
+  padding: 20px;
+  border-radius: 12px;
+  left: 23%;
+  top: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: #e6533c;
+  border-radius: 50%;
 }

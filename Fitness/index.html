@@ -7,38 +7,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Fitness</title>
 </head>
 <body>
 
-    <div class = "navhero">
+
     <Navbar class = "navbar">
         <div>
             <h3>Fitness</h3>
         </div>
-        <div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
+        <div class="navlist">
+            <p>Home</p>
+            <p>Service</p>
+            <p>Contact</p>
+            <p>About</p>
         </div>
+        <span>
+            <i class="fa-solid fa-bars"></i>
+        </span>
     </Navbar>
     
-    <section class = "hero">
-        <div>
+    <section class = "hero-container">
+        <div class="banner-left">
             <h1>Get body in shape & stay healthy</h1>
             <p>A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
-            <button>Join Club Now!</button>
-            <button>Download App</button>
+            <button style="background-color: #E6533C;">Join Club Now!</button>
+            <button style="background-color: transparent;border: 1px solid gray;">Download App</button>
         </div>
 
-        <div>
+        <div class="banner-right">
             <img src = "fitness-resources/images/Images 2.png" alt = "Fitness Image">
+            <div class="tooltip">
+                <h2>500+</h2>
+                <p>Free Workout Videos</p>
+            </div>
+            <div class="tooltip2">
+                <div class="ball"></div>
+               <div>
+                 <h2>350+</h2>
+                <p>Video tutorial</p>
+               </div>
+            </div>
         </div>
     </section>
 
-    </div>
 </body>
 </html>
