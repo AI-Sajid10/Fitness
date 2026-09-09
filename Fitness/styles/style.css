@@ -367,3 +367,424 @@ main {
     color: #999;
     font-size: 16px;
 }
+
+
+
+/* Responsive Design */
+/* =========================================
+   LARGE DEVICE
+   993px - 1200px
+========================================= */
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+    .navbar,
+    .hero-container,
+    main,
+    .card,
+    .team,
+    .footer-container,
+    .footer-bottom {
+        max-width: 95%;
+    }
+
+    .banner-left h1 {
+        font-size: 65px;
+    }
+
+    .card-left h1 {
+        font-size: 38px;
+    }
+
+    .trainer {
+        height: 330px;
+    }
+}
+
+
+/* =========================================
+   MEDIUM DEVICE / TABLET
+   577px - 992px
+========================================= */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+
+    /* Navbar */
+
+    .navbar {
+        max-width: 95%;
+        padding: 15px 0;
+    }
+
+    .navbar h3 {
+        font-size: 32px;
+    }
+
+    .navlist {
+        gap: 10px;
+    }
+
+    .navlist p {
+        font-size: 13px;
+        padding: 7px 12px;
+    }
+
+
+    /* Hero */
+
+    .hero-container {
+        max-width: 95%;
+        gap: 30px;
+    }
+
+    .banner-left,
+    .banner-right {
+        width: 50%;
+    }
+
+    .banner-left h1 {
+        font-size: 48px;
+        line-height: 1.1;
+    }
+
+    .banner-left p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .banner-left button {
+        width: 160px;
+    }
+
+    .banner-right img {
+        width: 70%;
+    }
+
+    .tooltip {
+        right: -5%;
+        width: 170px;
+    }
+
+    .tooltip2 {
+        left: 5%;
+    }
+
+
+    /* Change Your Habits */
+
+    main {
+        max-width: 95%;
+    }
+
+    .main-1 h1 {
+        font-size: 40px;
+    }
+
+    .main-2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 45px;
+    }
+
+
+    /* Extra Mile Card */
+
+    .card {
+        max-width: 95%;
+        gap: 30px;
+    }
+
+    .card-left,
+    .card-right {
+        width: 50%;
+    }
+
+    .card-left h1 {
+        font-size: 34px;
+    }
+
+    .card-left p {
+        font-size: 13px;
+    }
+
+    .card-right img {
+        height: 250px;
+    }
+
+
+    /* Team */
+
+    .team {
+        max-width: 95%;
+    }
+
+    .right {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .trainer {
+        height: 320px;
+    }
+
+
+    /* Footer */
+
+    .footer-container {
+        max-width: 95%;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    .footer-logo h1 {
+        font-size: 50px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL DEVICE / MOBILE
+   0px - 576px
+========================================= */
+
+@media screen and (max-width: 576px) {
+
+    /* Navbar */
+
+    .navbar {
+        width: 90%;
+        padding: 15px 0;
+    }
+
+    .navbar h3 {
+        font-size: 30px;
+    }
+
+    .navlist {
+        display: none;
+    }
+
+    .navbar span {
+        display: block;
+        font-size: 25px;
+    }
+
+
+    /* Hero */
+
+    .hero-container {
+        width: 90%;
+        flex-direction: column;
+        padding: 20px 0;
+        margin-bottom: 70px;
+    }
+
+    .banner-left,
+    .banner-right {
+        width: 100%;
+    }
+
+    .banner-left h1 {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+
+    .banner-left p {
+        font-size: 13px;
+        line-height: 1.6;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .banner-left button {
+        width: 48%;
+        height: 48px;
+        font-size: 12px;
+    }
+
+
+    /* Hero Image */
+
+    .banner-right {
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .banner-right img {
+        width: 70%;
+    }
+
+    .tooltip {
+        right: 0;
+        top: 10%;
+        width: 150px;
+        height: 80px;
+        padding: 15px;
+    }
+
+    .tooltip h2 {
+        font-size: 20px;
+    }
+
+    .tooltip p {
+        font-size: 10px;
+    }
+
+    .tooltip2 {
+        left: 5%;
+        top: 65%;
+        padding: 12px;
+    }
+
+    .tooltip2 h2 {
+        font-size: 18px;
+    }
+
+    .tooltip2 p {
+        font-size: 10px;
+    }
+
+    .ball {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    /* Change Your Habits */
+
+    main {
+        width: 90%;
+        padding: 0;
+    }
+
+    .main-1 {
+        margin-bottom: 40px;
+    }
+
+    .main-1 h1 {
+        font-size: 32px;
+    }
+
+    .main-1 p {
+        font-size: 12px;
+    }
+
+    .main-2 {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .habit-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+
+    /* Extra Mile Card */
+
+    .card {
+        width: 90%;
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+        margin: 70px auto;
+    }
+
+    .card-left,
+    .card-right {
+        width: 100%;
+    }
+
+    .card-left {
+        padding-left: 5px;
+    }
+
+    .card-left h1 {
+        font-size: 32px;
+    }
+
+    .card-left p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .card-left button {
+        width: 100%;
+    }
+
+    .card-right img {
+        height: 220px;
+    }
+
+
+    /* Team */
+
+    .team {
+        width: 90%;
+        margin: 70px auto;
+    }
+
+    .left {
+        margin-bottom: 35px;
+    }
+
+    .left h1 {
+        font-size: 32px;
+    }
+
+    .left p {
+        font-size: 12px;
+    }
+
+    .right {
+        grid-template-columns: 1fr;
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .trainer {
+        height: 350px;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        margin-top: 70px;
+        padding: 50px 0 25px;
+    }
+
+    .footer-container {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-logo h1 {
+        font-size: 48px;
+    }
+
+    .footer-logo p {
+        font-size: 12px;
+    }
+
+    .footer-links h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .footer-links p {
+        font-size: 15px;
+        margin-bottom: 14px;
+    }
+
+    .footer-bottom {
+        width: 90%;
+        margin-top: 35px;
+        padding-top: 20px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+
+}
